@@ -1,0 +1,168 @@
+// top header of the document
+#main-header{
+    position: fixed;
+    width: 100%;   
+    z-index: 22;
+    .navbar-brand{
+        color: $secondary-clr;
+    }
+
+    .navbar-btn{
+        cursor: pointer;
+    }
+
+
+    // first class of navbar before scrolling
+    &.navbar-first{
+        background: rgba(#fff, 0.1);
+        color: $secondary-clr;
+        padding: 10px 0;
+
+        .nav-item{
+            margin: 0 20px;
+            
+            a{
+                color: $secondary-clr;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    // scroll class of navbar scrilling scrolling
+    &.navbar-scroll{
+        background: white;
+        color: $primary-clr;
+        padding: 10px 0;
+
+        .nav-item{
+            margin: 0 20px;
+            
+            a{
+                color: $primary-clr;
+                font-size: 1rem;
+                font-weight: 500;
+
+                &:hover{
+                    color: $secondary-main-clr;
+                    text-decoration: none;
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+    }
+
+
+
+    
+}
+
+
+// navbar menu
+.navbar-menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    background: rgba($primary-clr, 0.6);
+    width: 100vw;
+    height:100vh;
+
+    .navbar-menu-container{
+        position: relative;
+        width: 300px;
+        height: 100%;
+        background: white;
+
+        .navbar-close-btn{
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            color: white;
+
+            &:hover{
+                color: $main-clr;
+                cursor: pointer;
+            }
+        }
+
+        li{
+            a{
+                padding: 10px;
+                border-bottom: 1px solid gray;
+                display: block;
+                color: $primary-clr;
+                font-weight: 500;
+
+                &:hover{
+                    color: $secondary-main-clr;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .navbar-btn,.navbar-close-btn{
+        font-weight: 300;
+    }
+
+    .search-input{
+        border-radius: 100px
+    }
+
+    .fab{
+        padding: 7px;
+        border-radius: 100px;
+        color: white;
+        width: 30px;
+        margin: 0 5px;
+    }
+
+}
+
+.search-btn{
+    cursor: pointer;
+}
+
+
+// search menu
+.search-menu{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba($primary-clr, 0.8);
+    z-index:44;
+    
+
+    form{
+        margin-top: 30vh;
+        .search-input{
+            border-radius: 100px 0 0 100px;
+        }
+        .input-group-prepend{
+            border-radius: 0 100px 100px 0;
+
+            button{
+                border-radius: 0 100px 100px 0 !important;
+            }
+        }
+    }
+
+    .search-close-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            color: $secondary-main-clr;
+            @include easeOut(0.5s);
+        }
+    }
+    
+}

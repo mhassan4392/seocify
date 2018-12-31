@@ -1,0 +1,82 @@
+// import partials
+@import 'config';
+@import 'header';
+@import 'showcase';
+@import 'others';
+@import 'footer';
+@import 'mobile';
+
+
+// full document settings
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+// body of the document
+body{
+    overflow-x: hidden;
+    color: $primary-clr;
+    font-family: 'Nunito', Helvetica , Arial , sans-serif;
+}
+.btn{
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.btn-primary{
+    background: $main-clr;
+    border: none;
+
+    &:hover{
+        background: $secondary-main-clr;
+    }
+}
+
+.slash{
+    width: 100px;
+    height: 2.3px;
+    background: $secondary-main-clr;
+}
+
+.fa-facebook-f{
+    background: #3B5998 !important;
+
+    &:hover{
+        color:#3B5998 !important;
+        background: white !important;
+    }
+}
+
+.fa-twitter{
+    background: #1DA1F2 !important;
+    &:hover{
+        color:#1DA1F2 !important;
+        background: white !important;
+    }
+}
+
+.fa-instagram{
+    background: #fb3958 !important;
+    &:hover{
+        color:#fb3958 !important;
+        background: white !important;
+    }
+}
+
+.fa-youtube{ 
+    background: #ff0000 !important;
+    &:hover{
+        color:#ff0000 !important;
+        background: white !important;
+    }
+}
+
+.fa-linkedin{ 
+    background: #0077B5 !important;
+    &:hover{
+        color:#0077b5 !important;
+        background: white !important;
+    }
+}

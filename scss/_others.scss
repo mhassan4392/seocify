@@ -1,0 +1,281 @@
+// features section
+#features{
+    padding: 100px 0;
+    .feature-header{
+        padding: 10px;
+    }
+}
+
+
+// newsletter section
+#newsLetter{
+    position: relative;
+    color: $secondary-clr;
+    padding: 100px 0;
+    background-image: url('../images/newLetter-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .newsletter-img-1,.newsletter-img-2{
+        position: absolute;
+    }
+    .newsletter-img-1{
+        top: 30%;
+        left: 0;
+    }
+    .newsletter-img-2{
+        top: 30%;
+        right: 0;
+    }
+
+    .subscribe-input{
+        border-radius: 100px 0 0 100px;
+        background-image: url('../images/email-logo.png');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 40px;
+        padding-left: 70px;
+        background-position-x: 3%;
+    }
+
+    button{
+        border-radius: 0 100px 100px 0;
+    }
+}
+
+
+
+// plans section{
+    #plans{
+        padding: 100px 0;
+
+        .plans-list{
+            li{
+                display: flex;
+                line-height: 2.5rem;
+
+                .fa{
+                    margin-right: 12px;
+                    color: $main-clr;
+                }
+            }
+        }
+    }
+
+    // work flow section
+    #workflow{
+        padding: 100px 0;
+        color: $secondary-clr;
+        background-image: url('../images/workflow-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: cover;
+
+        .workflow-col{
+            color: rgba($secondary-clr, 0.6);
+            margin-bottom: 10px;
+            &:hover{
+                cursor: pointer;
+                color: $secondary-clr;
+                @include easeOut(0.5s);
+                .workflow-icon{
+                    background: rgba($main-clr, 0.4);
+                    @include easeOut(0.5s);
+                }
+            }
+
+            .workflow-icon{
+                margin: auto;
+                width: 130px;
+                height: 130px;
+                background: rgba($main-clr, 0.2);
+                border-radius: 50%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    // services section
+    #services{
+        padding: 100px 0;
+
+        .services-columns{
+            display: grid;
+            grid-gap: 1rem;
+            
+            .card{
+                cursor: pointer;
+                
+                
+
+            &:hover{
+                background: white !important;
+            }
+            &.active{
+                background: white !important;
+                box-shadow: 10px 10px 8px #888888;
+            }
+            }
+        }
+    }
+
+    //aboutus section
+    #aboutus{
+        padding: 100px 0;
+        .count{
+            font-size: 3rem;
+        }
+    }
+
+
+
+    // pricing section
+    #pricing{
+        padding: 100px 0;
+
+        .pricing-col{
+            padding: 30px 10px;
+            img{
+                padding: 30px 0;
+            }
+
+            .pricing-plan-price{
+                padding-bottom: 20px;
+            }
+    
+            .pricing-plan-list{
+                li{
+                    list-style-type: none;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+        .btn-group{
+            border-radius: 20px;
+
+            .btn{
+                color: white;
+                border-radius: 20px;
+
+                &.active{
+                    color: $secondary-main-clr;
+                    background: white;
+                    @include easeOut(0.8s);
+                }
+            }
+        }
+    }
+
+
+    // testimonial section
+    #testimonial{
+        padding: 100px 0;
+        background: $secondary-main-clr;
+        color: white;
+
+        .testimonial-container{
+            text-align: center;
+
+            .testimonial-img{
+                width: 100px;
+                margin: auto;
+        
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .testimonial-comment{
+                text-align: center;
+                padding: 20px 0;
+                width: 80%;
+                margin: auto;
+                height: 200px;
+                line-height: 1.8rem;
+            }
+            .testimonial-bio{
+                text-align: center;
+                padding: 20px 0;
+            }
+        
+        
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    // latest news section
+    #latest-news{
+        padding: 100px 0;
+
+        h5{
+            a{
+                color: $primary-clr;
+                &:hover{
+                    color: $secondary-main-clr;
+                    text-decoration: none;
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+        .card{
+            border-bottom: 2px solid $primary-clr;
+            overflow: hidden;
+            .card-img-top{
+                overflow: hidden;
+            }
+
+            &:hover{
+                border-bottom: 2px solid $secondary-main-clr;
+                @include easeOut(0.5s);
+
+                img{
+                    transform: scale(1.1);
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+    }
+
+
+
+    // projects section
+    #projects{
+        padding: 100px 0;
+
+        h5{
+            a{
+                color: $primary-clr;
+                &:hover{
+                    color: $secondary-main-clr;
+                    text-decoration: none;
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+        .card{
+            border-bottom: 2px solid $primary-clr;
+            overflow: hidden;
+            .card-img-top{
+                overflow: hidden;
+            }
+
+            &:hover{
+                border-bottom: 2px solid $secondary-main-clr;
+                @include easeOut(0.5s);
+
+                img{
+                    transform: scale(1.1);
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+    }

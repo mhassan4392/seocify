@@ -1,0 +1,97 @@
+// bottom footer of the document
+#main-footer{
+    background: #001d4c;
+    color: white;
+
+    .footer-address{
+        padding: 50px 0;
+        border-bottom: 1px solid gray;
+        img{
+            margin-right: 20px;
+        }
+        a{
+            color: white;
+            display: block;
+
+            &:hover{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .footer-list-header{
+        margin-bottom: 20px;
+    }
+    .footer-list{
+        li{
+            list-style-type: none;
+            line-height: 2.2rem;
+
+            a{
+                color: white;
+                font-size: 1.1rem;
+
+                &:hover{
+                    color: $secondary-main-clr;
+                    padding-left: 10px;
+                    text-decoration: none;
+                    @include easeOut(0.5s);
+                }
+            }
+        }
+
+        
+    }
+    .latest-blog{
+        li{
+            margin-bottom: 10px;
+            a{
+                &:hover{
+                    padding-left: none !important;
+                }
+            }
+        }
+    }
+
+
+
+    .bottom-footer{
+        padding: 50px 0;
+        background: darken(#001d4c, 6);
+
+        a{
+            text-align: center;
+        }
+
+        .fab{
+            padding: 7px;
+            border-radius: 100px;
+            color: white;
+            width: 30px;
+            margin: 0 5px;
+
+            
+        }
+    }
+
+    .partners-and-cards{
+        background: #022967;
+        padding: 40px 10px;
+        margin-bottom: 20px;
+        margin-top: -90px;
+
+        .partners{
+            text-align: left;
+            img{
+                margin: 10px;
+            }
+        }
+        .cards{
+            text-align: right;
+            img{
+                margin: 5px;
+            }
+        }
+    }
+}
