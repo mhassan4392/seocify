@@ -27,6 +27,10 @@
   <body>
       <!-- Page Content -->
       <div class="page-content">
+        <!-- Scroll to top btn -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+
           <!-- Main Header -->
           <header id="main-header" class="navbar-first">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -120,9 +124,9 @@
                     <form action="#" class="py-4">
                       <div class="form-group">
                         <div class="input-group mb-2">
-                          <input type="search" class="form-control form-control-lg search-input" placeholder="Search here">
+                          <input type="search" class="form-control form-control-lg search-input py-5" placeholder="Search here">
                           <div class="input-group-prepend">
-                            <button type="submit" class="btn btn-sm btn-success px-5"><i class="fa fa-search"></i></button>
+                            <button type="submit" class="btn btn-sm btn-success px-5 py-4"><i class="fa fa-search fa-2x"></i></button>
                           </div>
                         </div>
                       </div>
@@ -257,7 +261,7 @@
                   <form action="#" class="py-4">
                     <div class="form-group">
                       <div class="input-group mb-2">
-                        <input type="text" class="form-control form-control-lg subscribe-input" placeholder="Search here">
+                        <input type="text" class="form-control form-control-lg subscribe-input" placeholder="Enter Email">
                         <div class="input-group-prepend">
                           <button type="submit" class="btn btn-sm btn-success px-3"><b>SUBSCRIBE</b></button>
                         </div>
@@ -569,17 +573,19 @@
                         <img src="images/about.png" class="img-fluid" alt="About Image">
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 aboutus-reveal">
+                      
                       <h5 class="text-main-2">Aboutus</h5>
                       <h1>We're a sum of talented people with innovative mind & marketing expertise</h1>
                       <div class="slash my-4"></div>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates quo omnis magni quisquam quam facere? Corporis soluta molestiae corrupti?</p>
+                      <div class="about-show animated zoomIn">
                       <div class="d-flex">
                           <div class="text-center">
                               <div class="count text-main-2">10</div>
                               <h5 class="count-para">Years Of Experience</h5>
                           </div>
-                          <div class="text-center">
+                          <div class="text-center ">
                               <div class="count text-main-2">255</div>
                               <h5>COMPLETED PROJECTS</h5>
                           </div>
@@ -589,6 +595,10 @@
                           </div>
                         </div>
                     </div>
+
+                  </div>
+
+                    
                     
                   </div>
             </div>
@@ -878,12 +888,12 @@
                 <div class="footer-address">
                   <div class="row d-flex align-items-center">
                     <div class="col-md-4">
-                      <div class="footer-logo">
+                      <div class="footer-logo mb-3">
                         <a href="#"><img src="images/footer-logo.png" alt=""></a>
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <div class="footer-location d-flex align-items-center">
+                      <div class="footer-location mb-3 d-flex align-items-center">
                         <div><img src="images/footer-address.png" alt=""></div>
                         <div>
                             <a href="#">556/L farid town </a>
@@ -892,7 +902,7 @@
                       </div>
                     </div>
                     <div class="col-md-4">
-                      <div class="footer-location d-flex align-items-center">
+                      <div class="footer-location mb-3 d-flex align-items-center">
                         <div><img src="images/footer-message.png" alt=""></div>
                         <div>
                             <a href="#">seocify@gmail.com </a>
@@ -1011,8 +1021,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/main.js"></script>
 
   </body>
