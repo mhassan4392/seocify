@@ -147,21 +147,59 @@ $('.monthly-btn').click(function(){
 });
 
 
+let aboutShow = document.querySelector('.about-show');
+let count = document.querySelectorAll('.count');
+
+// $('.about-show').once({});
+$.appear('.about-show'); // It supports optional hash with "force_process" and "interval" keys. Check source code for details.
+
+    // $('<div>test</div>').appear(); // It also supports raw DOM nodes wrapped in jQuery.
+
+    $('.about-show').one('appear', function(event, $all_appeared_elements) {
+      // this element is now inside browser viewport
+
+      $('.about-show').html(`
+      <div class="d-flex animated zoomIn">
+      <div class="text-center">
+          <div class="count text-main-2">10</div>
+          <h5 class="count-para">Years Of Experience</h5>
+      </div>
+      <div class="text-center ">
+          <div class="count text-main-2">255</div>
+          <h5>COMPLETED PROJECTS</h5>
+      </div>
+      <div class="text-center">
+          <div class="count text-main-2">91</div>
+          <h5>SATISFIED CUSTOMERS</h5>
+      </div>
+    </div>
+
+    <script>
+    $('.count').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          delay:1000,
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+    });
+    </script>
+      `);
 
 
-// // counter function for about us section
-// $('.count').each(function () {
-//   $(this).prop('Counter',0).animate({
-//       Counter: $(this).text()
-//   }, {
-//       delay:10000,
-//       duration: 10000,
-//       easing: 'swing',
-//       step: function (now) {
-//           $(this).text(Math.ceil(now));
-//       }
-//   });
-// });
+      // counter function for about us section
+
+      
+    });
+    $('.about-show').on('disappear', function(event, $all_disappeared_elements) {
+      // this element is now outside browser viewport
+    });
+
+
 
 
 // testimonial swiper
@@ -242,4 +280,22 @@ var swiper = new Swiper('.swiper-container', {
   // some scroll animations
 
   window.sr = ScrollReveal();
+
+  sr.reveal('.newsletter-img-1',{
+    duration:3000,
+    origin:'top',
+    distance:'300px',
+  });
+
+  sr.reveal('.newsletter-img-2',{
+    duration:3000,
+    origin:'bottom',
+    distance:'300px',
+  });
+
+  sr.reveal('.plans-img',{
+    duration:3000,
+    origin:'left',
+    distance:'300px',
+  });
   
